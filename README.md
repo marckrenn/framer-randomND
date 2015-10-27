@@ -5,7 +5,7 @@ Probs to Chris Camargo, Jordan Robert Dobson, stackoverflow’s user5084.
 
 #### Demo
 
-*Live Demo*: http://share.framerjs.com/p8s74tdpxp77/
+*Live Demo*: http://share.framerjs.com/oy7gr558bk2o/
 
 
 #### Getting started

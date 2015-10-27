@@ -6,7 +6,12 @@
 
 Utils.randomND = exports.randomND = (min, max, std_dev = (max/10)+2, mean = 0, amp = 2) ->
 
-		Math.round(Utils.modulate(mean + gaussRandom(amp) * std_dev,[max/2*-1,max/2],[min,max],false))
+    random = Math.round(Utils.modulate(mean + gaussRandom(amp) * std_dev,[max/2*-1,max/2],[min,max],false))
+        
+    if random < min || random > max
+        return Math.round(Utils.randomNumber(min,max))
+    else
+        return random     
 
     # the following is based on http://stackoverflow.com/a/196941 , Box-Muller Tranformation
 	gaussRandom = (amp) ->

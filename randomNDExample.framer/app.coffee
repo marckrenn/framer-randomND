@@ -32,5 +32,4 @@ for i in [0..10000]
 	
 	randomBiased = Utils.randomND(from,to,deviation,mean,amplitude)
 	
-	if randomBiased >= from and randomBiased <= to
-		barsVis[randomBiased].scaleY = barsVis[randomBiased].scaleY + 0.02
+	barsVis[randomBiased].scaleY = barsVis[randomBiased].scaleY + 0.02
