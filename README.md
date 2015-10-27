@@ -1,7 +1,7 @@
 ## framer-randomND
-‚randomND‘ returns a ‚Normally Distributed‘ random number (think Bell-Curve) where some number are more likely to be returned than others. Please see and play around with the provided randomNDExample.
+‚randomND‘ returns a *Normally Distributed* random number - think *Bell-Curve* - where some numbers are more likely to be returned than others. Please see and play around with the provided randomNDExample.
 
-Probs to Chris Camargo, Jordan Robert Dobson, stackoverflow’s user5084
+Probs to Chris Camargo, Jordan Robert Dobson, stackoverflow’s user5084.
 
 #### Demo
 

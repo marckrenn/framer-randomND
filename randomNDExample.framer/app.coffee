@@ -6,8 +6,8 @@ randomND = require "randomND"
 
 from = 0
 to = 99
-mean = 0 # Shifts amplitude
 deviation = 17 # Curve's width
+mean = 0 # Shifts amplitude
 amplitude = 2 # Curve's pointines
 
 # Visualization
