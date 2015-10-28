@@ -23,13 +23,21 @@ for i in [from..to]
 		scaleY: 0
 		name: "bar: " + i
 		
+Events.wrap(window).addEventListener "resize", (event) ->
+	for i in [from..to]
+		barsVis[i].width = Screen.width/(to-from)
+		barsVis[i].x = (i * Screen.width/(to-from)) - (Screen.width/(to-from) * from)
+
+		
 # Draw 10000 'normally distributed' random numbers
 for i in [0..10000]	
+
+	randomBiased = Utils.randomND(from,to,deviation,mean,amplitude)
+
+	# Also valid ways to use Utils.randomND:
 	
 	#randomBiased = Utils.randomND(from,to)
 	#randomBiased = Utils.randomND(from,to,deviation)
 	#randomBiased = Utils.randomND(from,to,deviation,mean)
-	
-	randomBiased = Utils.randomND(from,to,deviation,mean,amplitude)
 	
 	barsVis[randomBiased].scaleY = barsVis[randomBiased].scaleY + 0.02

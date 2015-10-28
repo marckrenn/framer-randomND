@@ -4,12 +4,12 @@
 # Add the following line to your project in Framer Studio. 
 # randomND = require "randomND"
 
-Utils.randomND = exports.randomND = (min, max, std_dev = (max/10)+2, mean = 0, amp = 2) ->
+Utils.randomND = exports.randomND = (from, to, deviation = (max/10)+2, mean = 0, amp = 2) ->
 
-    random = Math.round(Utils.modulate(mean + gaussRandom(amp) * std_dev,[max/2*-1,max/2],[min,max],false))
+    random = Math.round(Utils.modulate(mean + gaussRandom(amp) * deviation,[to/2*-1,to/2],[from,to],false))
         
-    if random < min || random > max
-        return Math.round(Utils.randomNumber(min,max))
+    if random < from || random > to
+        return Math.round(Utils.randomNumber(from,to))
     else
         return random     
 
