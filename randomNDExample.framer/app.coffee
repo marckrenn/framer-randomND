@@ -1,5 +1,5 @@
 # 'randomND' module example project v1.0
-# by Marc Krenn, Oct. 27th, 2015 | marc.krenn@gmail.com | @marc_krenn
+# by Marc Krenn, Jan. 2nd, 2016 | marc.krenn@gmail.com | @marc_krenn
 
 # Include module
 randomND = require "randomND"
@@ -32,7 +32,7 @@ Events.wrap(window).addEventListener "resize", (event) ->
 # Draw 10000 'normally distributed' random numbers
 for i in [0..10000]	
 
-	randomBiased = Utils.randomND(from,to,deviation,mean,amplitude)
+	randomBiased = Utils.randomND(from,to)
 
 	# Also valid ways to use Utils.randomND:
 	
